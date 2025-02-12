@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя визитка</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Программист МК на C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .skills {
+            margin-top: 20px;
+        }
+        .skills span {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #007bb5;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Привет, я Иван!</h1>
-        <p>Разрабатываю сайты и микроконтроллерные проекты.</p>
-    </header>
-    <section>
-        <h2>Обо мне</h2>
-        <p>Я программист, занимаюсь разработкой веб-сайтов и устройств на STM32 и ESP32.</p>
-    </section>
-    <footer>
-        <p>Связаться со мной: <a href="mailto:ivan@example.com">ivan@example.com</a></p>
-    </footer>
+    <div class="container">
+        <h1>Программист микроконтроллеров</h1>
+        <p>Привет! Я специализируюсь на разработке программного обеспечения для микроконтроллеров на C++. Работал с STM32, ESP32, AVR и ARM-архитектурой.</p>
+        <div class="skills">
+            <span>C++</span>
+            <span>Embedded Systems</span>
+            <span>STM32</span>
+            <span>ESP32</span>
+            <span>Mbed OS</span>
+            <span>FreeRTOS</span>
+            <span>Modbus</span>
+            <span>UART, SPI, I2C</span>
+        </div>
+    </div>
 </body>
 </html>
