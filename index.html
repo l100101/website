@@ -5,45 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Программист МК на C++</title>
-    <!-- Кнопка для открытия меню на мобильных -->
-    <button id="menuToggle" class="menu-toggle">☰ Меню</button>
-    
 </head>
-<body>
 
+<body>
     <div class="container">
+        <button id="menuToggle" class="menu-toggle">☰ Меню</button>
         <h1>Программист микроконтроллеров</h1>
         <p>Привет! Я специализируюсь на разработке программного обеспечения для микроконтроллеров на C++. Работал с STM32, ESP32, AVR и ARM-архитектурой.</p>
-        <!-- <div class="skills">
-            <span>C++</span>
-            <span>Embedded Systems</span>
-            <span>STM32</span>
-            <span>ESP32</span>
-            <span>Mbed OS</span>
-            <span>FreeRTOS</span>
-            <span>Modbus</span>
-            <span>UART, SPI, I2C</span>
-        </div> -->
+        
         <a href="https://t.me/l100101" class="telegram_button" target="_blank">
-            <img src="telegram.svg" alt="Telegram" class="telegram_icon" />
+            <img src="images/telegram.svg" alt="Telegram" class="telegram_icon" />
             <span>@l100101</span>
         </a>
     </div>
-
+    
     <div class="menu">
-        <button onclick="togglePanel('C')"><img src="microchip.svg" alt="C"> C</button>
-        <button onclick="togglePanel('C++')"><img src="microchip.svg" alt="C++"> C++</button>
-        <button onclick="togglePanel('Embedded Systems')"><img src="microchip.svg" alt="Embedded"> Embedded</button>
-        <button onclick="togglePanel('STM32')"><img src="microchip.svg" alt="STM32"> STM32</button>
-        <button onclick="togglePanel('Arduino')"><img src="microchip.svg" alt="Arduino"> Arduino</button>
-        <button onclick="togglePanel('ESP32')"><img src="microchip.svg" alt="ESP32"> ESP32</button>
-        <button onclick="togglePanel('Mbed OS')"><img src="microchip.svg" alt="Mbed OS"> Mbed OS</button>
-        <button onclick="togglePanel('FreeRTOS')"><img src="microchip.svg" alt="FreeRTOS"> FreeRTOS</button>
-        <button onclick="togglePanel('Modbus')"><img src="microchip.svg" alt="Modbus"> Modbus</button>
-        <button onclick="togglePanel('UART')"><img src="microchip.svg" alt="UART"> UART</button>
-        <button onclick="togglePanel('I2C')"><img src="microchip.svg" alt="I2C"> I2C</button>
-        <button onclick="togglePanel('SPI')"><img src="microchip.svg" alt="SPI"> SPI</button>
-        <button onclick="togglePanel('DMX')"><img src="microchip.svg" alt="DMX"> DMX</button>
+        <button onclick="togglePanel('C')"><img src="images/microchip.svg" alt="C"> C</button>
+        <button onclick="togglePanel('C++')"><img src="images/microchip.svg" alt="C++"> C++</button>
+        <button onclick="togglePanel('Embedded Systems')"><img src="images/microchip.svg" alt="Embedded"> Embedded</button>
+        <button onclick="togglePanel('STM32')"><img src="images/microchip.svg" alt="STM32"> STM32</button>
+        <button onclick="togglePanel('Arduino')"><img src="images/microchip.svg" alt="Arduino"> Arduino</button>
+        <button onclick="togglePanel('ESP32')"><img src="images/microchip.svg" alt="ESP32"> ESP32</button>
+        <button onclick="togglePanel('Mbed OS')"><img src="images/microchip.svg" alt="Mbed OS"> Mbed OS</button>
+        <button onclick="togglePanel('FreeRTOS')"><img src="images/microchip.svg" alt="FreeRTOS"> FreeRTOS</button>
+        <button onclick="togglePanel('Modbus')"><img src="images/microchip.svg" alt="Modbus"> Modbus</button>
+        <button onclick="togglePanel('UART')"><img src="images/microchip.svg" alt="UART"> UART</button>
+        <button onclick="togglePanel('I2C')"><img src="images/microchip.svg" alt="I2C"> I2C</button>
+        <button onclick="togglePanel('SPI')"><img src="images/microchip.svg" alt="SPI"> SPI</button>
+        <button onclick="togglePanel('DMX')"><img src="images/microchip.svg" alt="DMX"> DMX</button>
     </div>
 
     <div id="C" class="panel">C — популярный язык программирования, удобный для работы с железом.</div>
@@ -59,6 +48,7 @@
     <div id="I2C" class="panel">I2C — шина, позволяющая подключать много устройств по двум проводам.</div>
     <div id="SPI" class="panel">SPI — быстрый способ обмена данными между микросхемами.</div>
     <div id="DMX" class="panel">DMX — стандарт для управления сценическим светом.</div>
+    
 
     <script src = "scripts.js"></script>
 </body>

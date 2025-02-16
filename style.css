@@ -4,13 +4,19 @@ body {
     color: #232428;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
-}
+    background-image: url('images/logo/black_on_white.svg'); 
+    background-size: 70%; 
+    background-position: center;
+    background-repeat: no-repeat;
+} 
 
 header {
     background: #333;
@@ -53,12 +59,13 @@ footer {
 }
 
 .container {
-    background: #444;
+    background: #274528d9;
     transition: all 0.3s ease-in-out; /* Плавное изменение */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    /* opacity: 0.9; */
 }
 
 .box {
@@ -111,6 +118,7 @@ p {
     padding-top: 20px;
     overflow-y: auto;
     gap: 2px;
+
 }
 
 /* Кнопки */
@@ -142,8 +150,8 @@ p {
 }
 
 .panel {
-    display: none; /* по умолчанию скрываем описание */
-    position: fixed; /* Позиционируем панель относительно окна */
+    display: none;/* по умолчанию скрываем описание */
+    position: fixed;/* Позиционируем панель относительно окна браузера */
     top: 0;
     left: 0;
     background: #f0f0f0;
@@ -156,8 +164,12 @@ p {
 }
 
 .panel.active {
-    display: block; /* показываем описание при добавлении класса 'active' */
+     display: block;/* показываем описание при добавлении класса 'active' */
 }
+
+
+/* Адаптация для мобильных устройств */
+
 /* Кнопка для мобильного меню */
 .menu-toggle {
     display: none; /* Скрыта по умолчанию */
@@ -176,6 +188,14 @@ p {
 
 /* Показываем кнопку только на мобильных устройствах */
 @media (max-width: 768px) {
+    .panel {
+        position: absolute;
+        left: 50%; /* Центрируем по экрану */
+        top: 100%; /* Размещаем ниже кнопки */
+        transform: translateX(-50%); /* Центрируем */
+        max-width: 90%; /* Чтобы не выходило за края экрана */
+        text-align: center;
+    }
     .menu-toggle {
         display: block;
     }
@@ -212,3 +232,4 @@ p {
         margin-left: 0; /* Убираем отступ слева */
     }
 }
+
