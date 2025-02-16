@@ -158,18 +158,42 @@ p {
 .panel.active {
     display: block; /* показываем описание при добавлении класса 'active' */
 }
+/* Кнопка для мобильного меню */
+.menu-toggle {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
 
-/* Адаптация для мобильных устройств */
+/* Показываем кнопку только на мобильных устройствах */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .menu {
+        display: none; /* Меню скрыто по умолчанию */
         width: 100%;
         height: auto;
-        position: relative;
-        display: none; /* Меню скрыто по умолчанию */
+        position: absolute;
+        background: #222222;
+        flex-direction: column;
+        padding-top: 20px;
+        left: 0;
+        top: 50px;
     }
 
     .menu.active {
-        display: block; /* Меню показывается при активации */
+        display: flex; /* Показываем меню при активации */
     }
 
     .menu button {
