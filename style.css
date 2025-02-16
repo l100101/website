@@ -158,3 +158,33 @@ p {
 .panel.active {
     display: block; /* показываем описание при добавлении класса 'active' */
 }
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: none; /* Меню скрыто по умолчанию */
+    }
+
+    .menu.active {
+        display: block; /* Меню показывается при активации */
+    }
+
+    .menu button {
+        width: 100%; /* Кнопки меню будут растянуты по ширине */
+        padding: 15px;
+    }
+
+    .container {
+        margin-left: 0; /* Убираем отступ слева на мобильных */
+        max-width: 100%;
+    }
+
+    .panel {
+        width: 100%; /* Панель будет шире */
+        position: relative; /* Панель не будет фиксированной */
+        margin-left: 0; /* Убираем отступ слева */
+    }
+}
