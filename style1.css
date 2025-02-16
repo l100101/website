@@ -1,7 +1,8 @@
-body { 
+
+body {
     font-family: Arial, sans-serif;
-    background: #222222;
-    color: #232428;
+    background-color: #f5f7fa;
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,50 +12,21 @@ body {
     height: 100vh;
     text-align: center;
 }
-
 header {
-    background: #333;
+    background: #333;;
     color: white;
     padding: 20px;
     border-radius: 10px;
 }
-
 footer {
     margin-top: 20px;
     font-size: 14px;
 }
-
-.telegram_button {
-    width: 100px;
-    text-align: center;
-    height: auto;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s ease-in-out;
-    text-decoration: none; /* убираем подчеркивание у ссылки */
-}
-
-.telegram_button img.telegram_icon {
-    width: 24px; /* задайте размер иконки */
-    height: 24px;
-    margin-right: 10px; /* отступ между иконкой и текстом */
-}
-
-.telegram_button span {
-    display: inline-block;
-    background: #222222;
-    color: #ececec;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin: 5px;
-    font-size: 16px;
-}
-
 .container {
-    background: #444;
+    background: white;
     transition: all 0.3s ease-in-out; /* Плавное изменение */
+    /* transform: rotate(45deg); Вращение */
+
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -64,7 +36,7 @@ footer {
 .box {
     width: 100px;
     height: 100px;
-    background-color: #2122;
+    background-color: blue;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -73,30 +45,25 @@ footer {
 }
 
 h1 {
-    color: #ececec;
+    color: #4a90e2;
 }
-
 p {
-    color: #ececec;
     font-size: 18px;
     line-height: 1.6;
 }
-
 .skills {
     margin-top: 20px;
     transition: transform 0.5s ease-in-out;
 }
-
 .skills span {
     display: inline-block;
-    background: #222222;
-    color: #ececec;
+    background: #e3f2fd;
+    color: #007bb5;
     padding: 8px 12px;
     border-radius: 8px;
     margin: 5px;
     font-size: 16px;
 }
-
 /* Левое меню */
 .menu {
     position: fixed;
@@ -110,7 +77,6 @@ p {
     align-items: center;
     padding-top: 20px;
     overflow-y: auto;
-    gap: 2px;
 }
 
 /* Кнопки */
@@ -128,7 +94,6 @@ p {
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    position: relative; /* Важное изменение: позиционируем кнопку относительно себя */
 }
 
 .menu button img {
@@ -141,20 +106,25 @@ p {
     background: #555;
 }
 
+/* Панель описания */
 .panel {
-    display: none; /* по умолчанию скрываем описание */
-    position: fixed; /* Позиционируем панель относительно окна */
-    top: 0;
-    left: 0;
-    background: #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    z-index: 10;
+    position: fixed;
+    left: 140px;
+    top: 50px;
+    width: 280px;
+    background: #f8f8f8;
+    border-left: 4px solid #333;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    display: none;
 }
 
+/* Активное состояние (плавное появление) */
 .panel.active {
-    display: block; /* показываем описание при добавлении класса 'active' */
+    transform: translateX(0);
+    opacity: 1;
+    display: block;
 }
